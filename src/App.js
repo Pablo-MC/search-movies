@@ -26,7 +26,7 @@ function App() {
 
 
    return (
-      <div className="container shadow-lg rounded-sm pt-3">
+      <div className="container shadow-lg pt-3">
          <Navbar setSearch={setSearch} />
          <MovieList movies={movies} />
          <Footer />

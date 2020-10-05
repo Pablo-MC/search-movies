@@ -19,3 +19,18 @@ nav {
    text-transform: uppercase;
    color: #eee;
 }
+
+
+@media (min-width: 767.98px) { 
+   
+   /* Solution to the navbar flash problem */  
+   .navbar-not-flash {
+      min-height: 60px; 
+      margin: auto;
+   }
+}
+
+@media (max-width: 575.98px) { 
+
+   .button-center { margin: 5px auto; }
+}

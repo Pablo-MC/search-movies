@@ -13,7 +13,7 @@ const MovieList = ({movies}) => {
                )}
             </div>         
          :
-            <div className="alert alert-danger text-center my-4" role="alert">No movies found 
+             <div className="alert alert-danger text-center my-4" role="alert">No movies found... &nbsp;  
                <span role="img" aria-label="crying face">&#x1f622;</span> 
             </div>
          }

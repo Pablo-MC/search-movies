@@ -21,7 +21,7 @@ const Navbar = ({ setSearch }) => {
          <button className="navbar-toggler bg-success" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
          </button>
-         <div className="collapse navbar-collapse" id="navbarSupportedContent">
+         <div className="collapse navbar-collapse navbar-not-flash" id="navbarSupportedContent">
             <form
                className="form-inline ml-auto my-2 my-lg-0"
                onSubmit={handleSubmit}
@@ -30,10 +30,12 @@ const Navbar = ({ setSearch }) => {
                   className="form-control mr-sm-2"
                   type="search"
                   name={title}
-                  placeholder="Search"
+                  placeholder="Search..."
                   onChange={handleChange}
                />
-               <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+               <div className="navbar-nav button-center" data-toggle="collapse" data-target=".navbar-collapse">
+                  <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+               </div>
             </form>
          </div>
       </nav>
